@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <!--подключения фавиконки если иконка не в формате icon а svg-->
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <title>ПРО КИНО</title>
+</head>
+<body>
+  <!--Заголовок-->
+  <header class="header">
+   <div class="container header__container">
+    <a class="header__logo" href="#">
+       <img class="header__image"  src="img/header/logo.svg" alt="Картинка логотип" width="80" height="18">
+    </a>
+    <a class="header__link" href="#trailes">
+      смотреть трейлер
+    </a>
+   </div>
+  </header>
+  <!--Тело-->
+  <main class="main">
+    <h1 class="visual-hidden">
+        Кино про Аватар
+    </h1>
+    <section class="hero">
+        <h2 class="visual-hidden">
+         Дата показа
+        </h2>
+        <div class="container main__container">
+          <picture class="hero__picture">
+            <source srcset="img/hero/description-big_desktop.png" media="(min-width:1440px)">
+            <source srcset="img/hero/description-table.png" media="(min-width:768px)">
+            <img class="hero__image" src="img/hero/description.png" alt="Название" width="288" height="76">
+           </picture>
+           <p class="hero__data">
+           <time class="hero__time" datetime="2024-02-22">
+             22 февраля
+           </time>
+           </p>
+           <a class="hero__link" href="#about">
+             <svg class="hero__svg"  viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <circle cx="18" cy="18" r="17.5" stroke="white"/>
+               <g clip-path="url(#clip0_26_249)">
+               <path d="M11.3579 14.8808C11.3579 14.7674 11.4027 14.6514 11.4897 14.5644C11.6638 14.3903 11.9485 14.3903 12.1226 14.5644L18.0789 20.5207L23.9482 14.6514C24.1223 14.4774 24.407 14.4774 24.5811 14.6514C24.7551 14.8254 24.7551 15.1102 24.5811 15.2842L18.3953 21.4726C18.2213 21.6466 17.9365 21.6466 17.7625 21.4726L11.4897 15.1998C11.4001 15.1102 11.3579 14.9968 11.3579 14.8808Z" fill="white"/>
+               </g>
+               <defs>
+               <clipPath id="clip0_26_249">
+               <rect width="13.5" height="13.5" fill="white" transform="translate(11.25 11.25)"/>
+               </clipPath>
+               </defs>
+             </svg>
+           </a>
+        </div>
+    </section>
+    <div class="container main__container">
+       <section class="about" id="about">
+        <h2 class="about__title">
+          Аватар: <br> Легенда об Аанге
+        </h2>
+        <p class="about__text">
+          Сюжет рассказывает о мальчике из племени воздушных кочевников, Аанге, способном покорять стихию воздуха. В возрасте 11 лет, он узнал, что он Аватар — властелин четырёх стихий. Мир погряз в многолетней войне нации Огня против остального мира, в котором определённые люди способны покорять одну из четырёх стихий — воду, землю, огонь или воздух. Аанг— единственный, кто способен покорить все элементы и будучи Аватаром, он должен спасти мир от уничтожения нацией Огня. Со своими новыми друзьями, Катарой и Соккой, Аанг отправляется овладевать стихиями, попутно их преследует изгнанный принц нации Огня — Зуко, который хочет вернуть себе честь, поймав Аватара.
+        </p>
+        <picture>
+          <source srcset="img/about/about-big-desktop.jpg" media="(min-width:1440px)">
+          <source srcset="img/about/about-desktop.jpg" media="(min-width:1024px)">
+          <source srcset="img/about/about-table.jpg" media="(min-width:768px)">
+          <img class="about__image" src="img/about/about.jpg" alt="Фото" width="288" height="268">
+        </picture>
+       </section>
+       <section class="trailes" id="trailes">
+        <h2 class="visual-hidden">
+          Просмотр трелера
+        </h2>
+        <ul class="trailes__list list">
+          <li class="list__item">
+            <button class="list__button list__button_active" aria-label="первый трейлер" type="button">
+              трейлер 1
+            </button>
+          </li>
+          <li class="list__item">
+            <button class="list__button" aria-label="второй трейлер" type="button">
+              трейлер 2
+            </button>
+          </li>
+          <li class="list__item">
+            <button class="list__button" aria-label="третий трейлер" type="button">
+              трейлер 3
+            </button>
+          </li>
+        </ul>
+        <ul class="trailes__video-list">
+          <li class="trailes__video-item">
+            <iframe class="trailes__video" src="https://www.youtube.com/embed/Rd1Lf_DFtmY?si=j5UyHzVhfApyFVs3" >
+            </iframe>
+          </li>
+        </ul>
+       </section>
+    </div>
+  </main>
+  <!--Подвал-->
+  <footer class="footer">
+    <div class="container footer__container">
+      <img class="footer__logo" src="img/footer/logo-footer.svg" alt="Логоти подвала" width="217" height="48">
+      <ul class="footer__list">
+        <li class="footer__item">
+          Designer:
+          <a class="footer__link" href="#">Anastasia Ilina</a>
+        </li>
+        <li class="footer__item">
+          Developer:
+          <a class="footer__link" href="#">Александр Шеин</a>
+        </li>
+      </ul>
+      <p class="footer__copyright">
+        © ПРОКИНО, 2024
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
