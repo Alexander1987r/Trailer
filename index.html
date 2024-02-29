@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/style.css">
+
     <!--подключения фавиконки если иконка не в формате icon а svg-->
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <!--Предзагрузка шрифтов-->
+    <link rel="preload" href="fonts/inter-regular_400.woff2"  as="font" crossorigin>
+    <link rel="preload" href="fonts/inter-semi_bold_600.woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/index.js" defer></script>
     <title>ПРО КИНО</title>
 </head>
 <body>
@@ -71,34 +77,33 @@
           <img class="about__image" src="img/about/about.jpg" alt="Фото" width="288" height="268">
         </picture>
        </section>
+
+
        <section class="trailes" id="trailes">
         <h2 class="visual-hidden">
           Просмотр трелера
         </h2>
         <ul class="trailes__list list">
           <li class="list__item">
-            <button class="list__button list__button_active" aria-label="первый трейлер" type="button">
+            <button class="list__button list__button_active" aria-label="первый трейлер" data-src="https://www.youtube.com/embed/Rd1Lf_DFtmY?si=j5UyHzVhfApyFVs3" data-number="0" type="button">
               трейлер 1
             </button>
           </li>
           <li class="list__item">
-            <button class="list__button" aria-label="второй трейлер" type="button">
+            <button class="list__button" aria-label="второй трейлер" data-src="https://www.youtube.com/embed/ByAn8DF8Ykk" data-number="1" type="button">
               трейлер 2
             </button>
           </li>
           <li class="list__item">
-            <button class="list__button" aria-label="третий трейлер" type="button">
+            <button class="list__button" aria-label="третий трейлер" data-src="https://www.youtube.com/embed/waJKJW_XU90" data-number="2" type="button">
               трейлер 3
             </button>
           </li>
         </ul>
-        <ul class="trailes__video-list">
-          <li class="trailes__video-item">
-            <iframe class="trailes__video" src="https://www.youtube.com/embed/Rd1Lf_DFtmY?si=j5UyHzVhfApyFVs3" >
-            </iframe>
-          </li>
-        </ul>
+        <!--Сюда поместим список трейлеров созданных через скрипт-->
+
        </section>
+
     </div>
   </main>
   <!--Подвал-->
